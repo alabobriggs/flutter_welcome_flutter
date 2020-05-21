@@ -51,3 +51,5 @@ samples, guidance on mobile development, and a full API reference.
 ```
 
 - You can user function short hand as `void main() => runApp(myApp())`
+
+- Add leading underscore to make a private property `_MyApp`
