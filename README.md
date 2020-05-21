@@ -65,3 +65,10 @@ samples, guidance on mobile development, and a full API reference.
 
   hello = [] // this will work because you are not trying to modify the list
 ```
+
+- Use getters to return a value, online functions it cannot accept any value 
+```dart
+ String get ResultPhrase {
+    return 'meat'
+  }
+```
