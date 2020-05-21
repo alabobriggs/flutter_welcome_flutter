@@ -25,6 +25,7 @@ samples, guidance on mobile development, and a full API reference.
 - A constructor runs once the class is called
 
 - Normal class
+
 ```dart
   Person({String inputName = "Max", int inputAge = 30}) {
   name = inputName;
@@ -33,6 +34,7 @@ samples, guidance on mobile development, and a full API reference.
 ```
 
 - Class with constructor
+
 ```dart
   class Person {
   String name;
@@ -53,3 +55,13 @@ samples, guidance on mobile development, and a full API reference.
 - You can user function short hand as `void main() => runApp(myApp())`
 
 - Add leading underscore to make a private property `_MyApp`
+
+- Adding `const` before variables means that you cannot modify the value of the variable. eg, if a var is equally to an object tith 1 item you can't chnage it to 2 items
+
+```dart
+  var hello = const ['name']
+
+  hello.add('mac') // this will through and error
+
+  hello = [] // this will work because you are not trying to modify the list
+```
